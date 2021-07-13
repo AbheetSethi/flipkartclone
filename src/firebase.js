@@ -8,11 +8,10 @@ const firebaseConfig = {
   storageBucket: "clone-509d3.appspot.com",
   messagingSenderId: "855847948291",
   appId: "1:855847948291:web:121165a6b01839cb42be36",
-  measurementId: "G-TYK3HW1G3P"
+  measurementId: "G-TYK3HW1G3P",
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig)
-
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
 const auth = firebase.auth();
 

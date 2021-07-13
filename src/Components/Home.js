@@ -1,37 +1,44 @@
 import React from 'react';
 import "../assets/css/Home.css";
 import Product from './Product';
+import CarouselComponent from './carousel.component'
+import BannerCarousel from './BannerCarousel'
+
 
 function Home() {
     return (
-        <div className="home"> 
+        <div className="home">
             <div className="home__container">
-                <img className="home__image"
+                {/* <img className="home__image"
                     src="https://entrackr.com/wp-content/uploads/2020/10/flipkart.jpg.webp"
-                    alt="banner"/>
+                    alt="banner"/> */}
+
+                <BannerCarousel />
 
                 <div className="home__row">
+
                     <Product
                         id="12321341"
                         title="Hisense A73F 139 cm (55 inch) Ultra HD (4K) LED Smart Android TV with 102W JBL 6 Speakers, Dolby Vision and Atmos  (55A73F)"
-                        price={45,999}
+                        price={45, 999}
                         rating={5}
                         image="https://rukminim1.flixcart.com/image/416/416/kj1r53k0-0/television/x/w/v/65a73f-hisense-original-imafypfhceyudnsq.jpeg?q=70"
                     />
                     <Product
                         id="49538094"
                         title="Lenovo Ideapad Gaming 3 Ryzen 5 Hexa Core 4600H - (8 GB/1 TB HDD/256 GB SSD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650/60 Hz) 15ARH05 Gaming Laptop  (15.6 inch, Onyx Black, 2.2 kg)"
-                        price={59,990}
+                        price={59, 990}
                         rating={4}
                         image="https://rukminim1.flixcart.com/image/416/416/kk2wl8w0/computer/f/k/b/na-gaming-laptop-lenovo-original-imafzgdkvx9guy8q.jpeg?q=70"
                     />
+
                 </div>
 
                 <div className="home__row">
                     <Product
                         id="4903850"
                         title="Apple Watch Series 3 GPS - 42 mm Space Grey Aluminium Case with Black Sport Band  (Black Strap, Regular)"
-                        price={22,900}
+                        price={22, 900}
                         rating={5}
                         image="https://rukminim1.flixcart.com/image/416/416/jmi22kw0/smartwatch/y/d/j/mtf32hn-a-apple-original-imaf9ec8ssmfcuxf.jpeg?q=70"
                     />
@@ -51,9 +58,10 @@ function Home() {
                     />
                 </div>
 
+
                 <div className="home__row">
-                        <h1 style={{margin:'50px auto', textTransform:'uppercase',fontSize:'3rem'}}>Grocery</h1>
-                </div>  
+                    <h1 style={{ margin: '20px auto', textTransform: 'uppercase', fontSize: '3rem' }}>Grocery</h1>
+                </div>
 
                 <div className="home__row">
                     <Product
@@ -74,7 +82,7 @@ function Home() {
                     <Product
                         id="908293075"
                         title="Optimum Nutrition Gold Standard 100% Protein Powder (907 g, Rocky Road)"
-                        price={1,848}
+                        price={1, 848}
                         rating={4}
                         image="https://rukminim1.flixcart.com/image/416/416/k8kiw7k0/protein-supplement/b/h/n/gold-standard-100-on266-optimum-nutrition-original-imafqk89ph5zdg5a.jpeg?q=70"
                     />
